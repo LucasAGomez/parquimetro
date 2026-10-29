@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parquímetro</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
 </head>
-
 <body>
     <header>
         <h1>Parquímetro</h1>
@@ -18,7 +15,7 @@
             <h2>Orientações de uso:</h2>
             <p>Permanencia máxima 3 horas.</p>
             <p>R$2,00 por hora.</p>
-            <p>Recarga miníma R$1,00.</p>
+            <p>Recarga mínima R$1,00.</p>
         </section>
         <section class="dados">
             <h2>Estacionar</h2>
@@ -27,19 +24,12 @@
                 <input type="number" min="1" id="deposito" placeholder="R$0,00" required>
             </div>
             <div>
-                <label for="valor-horas">Selecione o tempo </label>
+                <label for="valor-horas">Selecione o tempo</label>
                 <select class="valor-horas" id="valor-horas" required>
-                    <option value="" disabled selected>Selecione</option>
-                    <option value="1">30 minutos</option>
-                    <option value="2">1 hora</option>
-                    <option value="3">1h 30 minutos</option>
-                    <option value="4">2 Horas</option>
-                    <option value="5">2hs 30 minutos</option>
-                    <option value="6">3 horas</option>
                 </select>
             </div>
             <div>
-                <button id="btn-calcular" onclick="parquimetro.resultado()">Calcular</button>
+                <button id="btn-calcular">Calcular</button>
             </div>
         </section>
         <section class="resultados">
@@ -49,6 +39,6 @@
             <p id="res-mensagem"></p>
         </section>
     </main>
+    <script type="module" src="js/app.js"></script>
 </body>
-
 </html>
